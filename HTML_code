@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sravani Midde - Portfolio</title>
+    <link rel="stylesheet" href="OASIS_task2.css">
+</head>
+<body>
+    <div class="animation">
+        <header class="animate-left">
+            <h1 class="animate animate-right">Sravani Midde</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" class="animate animate-right" onclick="showPage('about-me')">About Me</a></li>
+                    <li><a href="#" class="animate animate-right" onclick="showPage('skills-projects')">Skills & Projects</a></li>
+                    <li><a href="#" class="animate animate-right" onclick="showPage('internships-achievements')">Internships & Achievements</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="animate-right">
+            <div id="about-me" class="page" style="text-align: center;">
+                <section class="animate-right">
+                    <h2 class="animate animate-right">Contact Details</h2>
+                    <p><strong>Name:</strong> Sravani Midde</p>
+                    <p><strong>Location:</strong> Kanuru, Andhra Pradesh, 534329</p>
+                    <p><strong>Phone:</strong> 9701413824</p>
+                    <p><strong>Email:</strong> sravanimidde77@gmail.com</p>
+                    <p><strong>GitHub:</strong> <a href="https://github.com/SravaniMidde229" target="_blank" class="animate">SravaniMidde229</a></p>
+                    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sravani-midde-994b79257/" target="_blank" class="animate">Sravani Midde</a></p>
+                </section>
+                <section>
+                    <h2 class="animate animate-right">Summary</h2>
+                    <p class="animate-left" style="text-align: center;">Bachelor of Technology graduate in Electrical & Electronics Engineering with a strong foundation in programming languages like C and Python, along with expertise in Data Structures and Algorithms. Passionate about web development and proficient in front-end technologies such as HTML, CSS, and JavaScript.</p>
+                </section>
+            </div>
+            <div id="skills-projects" class="page">
+                <section class="animate-right">
+                    <h2 class="animate animate-right">Skills</h2>
+                    <ul class="animate-left sravs" style="text-align: center;">
+                        <li>Programming Languages: C, Python</li>
+                        <li>Data Structures and Algorithms</li>
+                        <li>Front-end Development: HTML, CSS, JavaScript</li>
+                        <li>Tools: MATLAB, Verilog</li>
+                    </ul>
+                </section>
+                <section class="animate-left">
+                    <h2 class="animate animate-right">Projects</h2>
+                    <article class="animate-left" style="text-align: center;">
+                        <h3 class="animate" style="text-align: center;">Tourism Website</h3>
+                        <p>Developed tourism website where users can browse through the content, videos and images of popular destinations.</p>
+                        <p>Technologies used: HTML, CSS, Bootstrap</p>
+                    </article>
+                    <article class="animate-left" style="text-align: center;">
+                        <h3 class="animate" style="text-align: center;">To-dos Application</h3>
+                        <p>A robust task tracking system with CRUD capabilities, crafted to simplify task management.</p>
+                        <p>Technologies used: HTML, CSS, JavaScript, Bootstrap</p>
+                    </article>
+                </section>
+            </div>
+            <div id="internships-achievements" class="page">
+                <section class="animate-left">
+                    <h2 class="animate animate-right">Internship Experience</h2>
+                    <article class="animate-left" style="text-align: center;">
+                        <h3>Data Science and Machine Learning Using Python</h3>
+                        <p>Developed websites for Diamond Price Prediction and Energy Usage Forecasting using Machine Learning showcasing strong problem-solving skills.</p>
+                    </article>
+                </section>
+                <section class="animate-right">
+                    <h2 class="animate animate-right">Achievements</h2>
+                    <ul class="animate-left" style="text-align: center;">
+                        <li>Prathibha Award in SSC: Got MANDAL first in SSC among Government Schools and received 15,000 rupees cash prize.</li>
+                        <li>Top Performer in Internship: In Data Science and Machine Learning Internship appreciated with certificate as a best Performer.</li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <p class="animate">&copy; Sravani Midde </p>
+        </footer>
+
+        <script>
+            function showPage(pageId) {
+                const pages = document.querySelectorAll('.page');
+                pages.forEach(page => {
+                    if (page.id === pageId) {
+                        page.style.display = 'block';
+                    } else {
+                        page.style.display = 'none';
+                    }
+                });
+            }
+        </script>
+    </div>
+</body>
+</html>
